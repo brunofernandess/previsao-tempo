@@ -1,0 +1,22 @@
+<link href=
+"https://fonts.googleapis.com/icon?family=Material+Icons&display=block"
+        rel="stylesheet">
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+
+
+  <div class="form-group">
+
+      <label for="city">Cidade</label>
+      <input
+          formControlName="city"
+          id="city"
+          type="text"
+          class="form-control">
+
+  </div>
+
+  <button class="btn btn-secondary" type="button" (click)="search()">
+    <mat-icon>search</mat-icon>
+  </button>
+</form>
